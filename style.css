@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'josephsophia'; /* Nombre personalizado de la fuente */
+    src: url('./fonts/Beautiful\ Heart.ttf') format('truetype'); /* Ruta a la fuente descargada */
+    font-weight: normal; /* Opcional: define el peso de la fuente */
+    font-style: normal;  /* Opcional: define el estilo de la fuente */
+}
+
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+/* Aseguramos que toda la página ocupe el 100% de la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-montserrat);
+    background-image: url('./img/fondo.jpg'); /* Fondo de pantalla */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #b5f8dd; /* Hacemos el encabezado semitransparente */
+    color: #000000;
+    padding: 1%;
+    text-align: center;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    gap: 15%;
+}
+
+header h1{
+    font-size: 24px; /* Ajusta el tamaño de la fuente para reducir el encabezado */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+.especial{
+    font-family: 'josephsophia';
+    font-size: 50px;
+    letter-spacing: 5px; /* Aumenta el espacio entre letras */
+}
+
+/* Navegación en el encabezado */
+nav {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* El main toma todo el espacio disponible */
+main {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+/* Contenido principal */
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye espacio entre texto e imagen */
+    align-items: center;
+    max-width: 100%; /* Asegura que no se desborde horizontalmente */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    overflow: hidden; /* Evita el desbordamiento */
+    text-align: justify;
+}
+
+/* Sección de texto ocupa la mitad de la pantalla */
+.text {
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    
+}
+/*Links*/
+.link_body{
+    color:#4400ff;
+    text-decoration: none;
+}
+/* Imagen en el lado derecho ocupa la otra mitad de la pantalla */
+.right-image {
+    width: 50%; /* La imagen ocupará la mitad de la pantalla */
+    border-radius: 10px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+/*link imagen*/
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.presentacion__enlaces__link{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      width: 50%;
+      text-align: center;
+      padding: 21.5px 0;
+      text-decoration: none;
+      color: #000000;
+      
+}
+
+#countdown {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin: 50px auto; /* Centra el cuadro horizontalmente */
+    padding: 20px; /* Espacio interno del cuadro */
+    width: 300px; /* Ancho del cuadro */
+    background-color: #f0f0f0; /* Fondo del cuadro */
+    border: 2px solid #333; /* Borde del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.presentacion__imagen{
+    width: 100px;
+}
+
+/* Adaptación para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 1024px) {
+    .content {
+        width: auto;
+    }
+
+    .right-image {
+        width: 100%; /* La imagen ocupará todo el ancho en dispositivos móviles */
+        margin-bottom: 20px; /* Añadimos un margen para separar del texto */
+    }
+
+    .text {
+        width: 100%; /* El texto también ocupará todo el ancho */
+        padding: 10px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+}
+
+
+
+
