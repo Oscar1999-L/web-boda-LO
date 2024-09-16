@@ -165,6 +165,45 @@ footer {
     width: 100px;
 }
 
+/* Estilo para la sección de búsqueda */
+.search-section {
+    margin: 50px auto;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-section input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #555;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
 /* Adaptación para pantallas pequeñas (dispositivos móviles) */
 @media (max-width: 1024px) {
     .content {
@@ -184,6 +223,12 @@ footer {
     main {
         flex-direction: column-reverse;
         padding: 5%;
+    }
+
+    #countdow{
+        width: auto; /* El texto también ocupará todo el ancho */
+        padding: 5%;
+        flex-direction: column-reverse;
     }
 }
 
